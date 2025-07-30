@@ -4,6 +4,9 @@
   --background: #ffffff;
   --foreground: #171717;
   --bg-dark: #343A40;
+
+  --font-poppins: 'Poppins', sans-serif;
+  --font-josefin: 'Josefin Sans', sans-serif;
 }
 
 @theme inline {
@@ -22,4 +25,27 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Poppins;
+}
+
+.font-poppins{
+  font-family: var(--font-poppins);
+}
+
+.font-josefin{
+   font-family: var(--font-josefin);
+}
+
+.bg-grey{
+  background-color: #b0b0b0;
+}
+
+.row{
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+.row-reverse{
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
 }
