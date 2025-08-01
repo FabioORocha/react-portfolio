@@ -1,3 +1,5 @@
+import { FaCheck } from "react-icons/fa6";
+
 import Image from 'next/image'
 
 export default function Experience(){
@@ -57,9 +59,7 @@ export default function Experience(){
                       key={i}
                       className="flex items-center justify-center gap-2 bg-grey text-black text-sm font-medium px-2.5 py-0.5 rounded"
                     >
-                      <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.3333 1L4.99999 8.33333L1.66666 5" stroke="#2C2C2C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                      <FaCheck className="text-xs text-[#2C2C2C]" />
                       {tag}
                     </span>
                   ))}
