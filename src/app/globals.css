@@ -21,6 +21,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -40,12 +44,12 @@ body {
 }
 
 .row{
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     flex-direction: row;
   }
 }
 .row-reverse{
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     flex-direction: row-reverse;
   }
 }

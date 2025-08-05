@@ -22,10 +22,10 @@ export default function About(){
   ];
 
   return(
-    <div className="w-full bg-[#343A40] mt-[80px]">
+    <div id='about' className="w-full bg-[#343A40] mt-[80px]">
       <div className="card w-full flex flex-col gap-[80px] items-center justify-center max-w-[978px] mx-auto px-[15px] py-[80px]">
         <div className="text text-center">
-          <h1 className='font-semibold text-[64px] mb-[40px]'>Sobre</h1>
+          <h1 className='font-semibold text-[36px] lg:text-[64px] mb-[40px]'>Sobre</h1>
           <p className='text-[18px] font-josefin'>
             Sou desenvolvedor front-end com mais de três anos de experiência em projetos web e mobile. Trabalho com JavaScript, HTML5, CSS3, React.js e React Native, construindo interfaces responsivas, acessíveis e com boa performance. 
             Tenho experiência com Next.js, Tailwind CSS, Twig, LIQUID, jQuery, Bootstrap e integração com APIs REST, além de conhecimentos em plataformas de e-commerce como NuvemShop, Wake Commerce e Olist Vnda. 
@@ -41,7 +41,7 @@ export default function About(){
               alt={`Imagem ${index + 1}`}
               width={60}
               height={60}
-              className=''
+              className="rounded-md w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]"
             />
           ))}
         </div>

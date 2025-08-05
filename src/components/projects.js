@@ -2,30 +2,22 @@ import { FaCheck } from "react-icons/fa6";
 
 import Image from 'next/image'
 
-export default function Experience(){
+export default function Projects(){
 
   const experiencias = [
     {
       class: "row-reverse",
-      titulo: "Desenvolvedor Front-End",
-      subtitulo: "Agência Oásis  01/2025 - 05/2025",
-      texto: "Na Oásis, atuei como desenvolvedor front-end em projetos voltados para e-commerce, colaborando em melhorias e novas implementações em interfaces web. Trabalhei com foco em desempenho, organização do código e entregas dentro de prazos curtos, além de apoiar o time de QA na identificação e ajuste de bugs. Apesar do período breve, foi uma experiência intensa de colaboração com equipe multidisciplinar.",
-      imagem: "/assets/oasis.png",
-      tags: ["JavaScript", "React.js", "HTML5", "CSS3", "Next.js", "Tailwind", "Github", "Nuvemshop", "Wake Commerce", "Scriban", "Figma", "Twig", "Git"],
-    },
-    {
-      class: "row",
-      titulo: "Desenvolvedor Front-End",
-      subtitulo: "Vnda Ecommerce  12/2021 - 11/2023",
-      texto: "Na Vnda, atuei como desenvolvedor front-end em um time responsável por implementar e manter interfaces de lojas virtuais em produção. Colaborei diretamente com o time de design para traduzir layouts em código e garantir experiências fluidas, acessíveis e alinhadas com o design system da empresa. Também participei de revisões de código e trabalhei com múltiplos clientes ao mesmo tempo, sempre priorizando clareza e organização nas entregas.",
-      imagem: "/assets/vnda.png",
-      tags: ["JavaScript", "React.js", "HTML5", "SCSS", "Liquid", "Tailwind", "Github", "Olist Vnda", "Git", "Figma"],
+      titulo: "Desenvolvedor React Native",
+      subtitulo: "PEA-FOCO  06/2020 - 11/2021",
+      texto: "No PEA-FOCO, fui responsável por planejar e desenvolver uma aplicação mobile voltada ao cadastro e organização de dados de pessoas atendidas pela ONG. Participei desde a concepção da solução até a entrega, incluindo a criação do wireframe no Adobe XD, definição das funcionalidades e desenvolvimento da interface com foco em usabilidade e organização.",
+      imagem: "/assets/peafoco.png",
+      tags: ["JavaScript", "React Native", "HTML5", "CSS", "Expo", "Github", "Adobe XD", "Firebase"],
     },
   ];
 
   return(
     <div id="experience" className="wrapper mt-[46px]">
-      <h1 className="title text-[36px] lg:text-[64px] text-center"> Experiências</h1>
+      <h1 className="title text-[36px] lg:text-[64px] text-center"> Projetos</h1>
       <div className="w-full">
 
         {experiencias.map((projeto, index) => (

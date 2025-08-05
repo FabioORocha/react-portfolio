@@ -63,42 +63,42 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="wrapper mt-[46px] mb-[180px]">
-      <h1 className="title text-[64px] text-center">Contato</h1>
+    <div id='contact' className="wrapper mt-[46px] mb-[180px]">
+      <h1 className="title text-[36px] lg:text-[64px] text-center">Contato</h1>
       <div className="w-full">
         <div className="wrapper w-full flex flex-col gap-[80px] items-center justify-center mx-auto px-[15px] pt-[40px] mt-[50px] bg-[#343A40]">
-          <div className="flex flex-col md:flex-row items-end gap-[45px] md:px-[200px]">
+          <div className="flex flex-row flex-wrap md:flex-nowrap items-end gap-[45px] lg:px-[200px] ">
             <div className="image">
               <Image
                 src="/assets/contact.png"
                 alt="imagem contato"
                 width={353}
                 height={444}
-                className="rounded-md"
+                className="rounded-md w-[176px] h-[222px] md:min-w-[176px] md:min-h-[222px] lg:min-w-[353px] lg:min-h-[444px]"
               />
             </div>
-            <div className="wrappers-buttons p-4 pb-8">
+            <div className="wrappers-buttons md:p-4 md:pb-8">
               <div className="flex justify-center space-x-4 mt-6">
                 <a
                   href="https://www.linkedin.com/in/fabiooliveiradarocha/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-[63px] h-[63px] bg-[#494f54] text-white rounded hover:bg-blue-800 transition"
+                  className="flex items-center justify-center w-[40px] h-[40px] lg:w-[63px] lg:h-[63px] bg-[#494f54] text-white rounded hover:bg-blue-800 transition"
                 >
-                  <FiLinkedin className='text-[#1f1f1f] w-11 h-11' />
+                  <FiLinkedin className='text-[#1f1f1f] w-8 h-8 lg:w-11 lg:h-11' />
                 </a>
                 <a
                   href="https://github.com/FabioORocha"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-[63px] h-[63px] bg-[#494f54] text-white rounded hover:bg-blue-800 transition"
+                  className="flex items-center justify-center w-[40px] h-[40px] lg:w-[63px] lg:h-[63px] bg-[#494f54] text-white rounded hover:bg-blue-800 transition"
                 >
-                  <RiGithubLine className='text-[#1f1f1f] w-11 h-11' />
+                  <RiGithubLine className='text-[#1f1f1f] w-8 h-8 lg:w-11 lg:h-11' />
                 </a>
               </div>
             </div>
             <div className="form-wrapper w-full pb-4">
-              <p className="title text-center mb-[20px] text-[24px]">Entre em contato comigo!</p>
+              <p className="title text-center mb-[20px] text-[18px]  lg:text-[24px]">Entre em contato comigo!</p>
 
               {enviado && (
                 <div className="max-w-md mx-auto p-4">
@@ -153,7 +153,7 @@ export default function ContactForm() {
                 <button
                   type="submit"
                   disabled={bloqueado}
-                  className={`w-[257px] px-4 py-2 rounded transition text-white ${
+                  className={`w-full md:w-[257px] px-4 py-2 rounded transition text-white ${
                     bloqueado
                       ? 'bg-[#494f54] cursor-not-allowed'
                       : 'bg-gray-500 hover:bg-[#5a6268]'
