@@ -10,9 +10,9 @@ export default function Header(){
           </h1>
         </div>
         <div className="navigation flex gap-8 md:gap-5">
-          <a href="#about text-[#ededed]" className=" ">Sobre</a>
-          <a href="#experience text-[#ededed]" className=" ">Experiência</a>
-          <a href="#contact text-[#ededed]" className=" ">Contato</a>
+          <a href="#about" className="text-[#ededed] ">Sobre</a>
+          <a href="#experience" className="text-[#ededed] ">Experiência</a>
+          <a href="#contact" className="text-[#ededed] ">Contato</a>
         </div>
       </div>
     </div>
