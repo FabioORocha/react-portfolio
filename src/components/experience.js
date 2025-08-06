@@ -25,7 +25,7 @@ export default function Experience(){
 
   return(
     <div id="experience" className="wrapper mt-[46px]">
-      <h1 className="title text-[36px] lg:text-[64px] text-center"> Experiências</h1>
+      <h1 className="title text-[36px] lg:text-[64px] text-center text-[#ededed]"> Experiências</h1>
       <div className="w-full">
 
         {experiencias.map((projeto, index) => (
@@ -42,9 +42,9 @@ export default function Experience(){
                 />
               </div>
               <div className="text text-center w-full">
-                <h2 className="text-[22px] lg:text-[40px]">{projeto.titulo}</h2>
-                <h3 className="text-[18px] lg:text-[30px]">{projeto.subtitulo}</h3>
-                <p className="text-[18px] font-josefin my-[40px]">{projeto.texto}</p>
+                <h2 className="text-[22px] lg:text-[40px] text-[#ededed]">{projeto.titulo}</h2>
+                <h3 className="text-[18px] lg:text-[30px] text-[#ededed]">{projeto.subtitulo}</h3>
+                <p className="text-[18px] font-josefin my-[40px] text-[#ededed]">{projeto.texto}</p>
                 <div className="flex flex-wrap justify-center gap-5 mt-4 px-[60px] mx-auto md:max-w-[80%]">
                   {projeto.tags.map((tag, i) => (
                     <span

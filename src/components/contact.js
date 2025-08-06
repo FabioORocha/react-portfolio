@@ -64,7 +64,7 @@ export default function ContactForm() {
 
   return (
     <div id='contact' className="wrapper mt-[46px] mb-[180px]">
-      <h1 className="title text-[36px] lg:text-[64px] text-center">Contato</h1>
+      <h1 className="title text-[36px] lg:text-[64px] text-center text-[#ededed]">Contato</h1>
       <div className="w-full">
         <div className="wrapper w-full flex flex-col gap-[80px] items-center justify-center mx-auto px-[15px] pt-[40px] mt-[50px] bg-[#343A40]">
           <div className="flex flex-row flex-wrap md:flex-nowrap items-end gap-[45px] lg:px-[200px] ">
@@ -98,11 +98,11 @@ export default function ContactForm() {
               </div>
             </div>
             <div className="form-wrapper w-full pb-4">
-              <p className="title text-center mb-[20px] text-[18px]  lg:text-[24px]">Entre em contato comigo!</p>
+              <p className="title text-center mb-[20px] text-[18px]  lg:text-[24px] text-[#ededed]">Entre em contato comigo!</p>
 
               {enviado && (
                 <div className="max-w-md mx-auto p-4">
-                  <p className="message text-center text-white bg-gray-700 rounded py-4">
+                  <p className="message text-center bg-gray-700 rounded py-4 text-[#ededed]">
                     Obrigado! Sua mensagem foi enviada.
                   </p>
                 </div>

@@ -8,7 +8,7 @@ import Projects from "@/components/projects";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#212529]">
       <Header/>
       <Fullbanner/>
       <About/>

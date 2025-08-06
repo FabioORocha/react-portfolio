@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={ `${poppins.variable} ${josefin.variable}` }>
+      <body className={ `${poppins.variable} ${josefin.variable} bg-[#212529]` }>
         {children}
       </body>
     </html>
