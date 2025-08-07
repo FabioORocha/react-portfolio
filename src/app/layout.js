@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import { Poppins, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 
